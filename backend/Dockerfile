@@ -26,7 +26,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/main.py .
 
 # Copy model file
-COPY best\ \(1\).pt .
+COPY ["best (1).pt", "/app/best (1).pt"]
 
 # Expose port
 EXPOSE 8000
